@@ -1,0 +1,73 @@
+<html>
+<head>
+	<title>jQuery</title>
+	<script type="text/javascript" src="approve.js"></script>
+	<script type="text/javascript" src="jquery-ui.js"></script>
+	<link rel="stylesheet" href="jquery-ui.css">
+	<link rel="stylesheet" href="jquery-ui.structure.css">
+	<script>
+  $( function() {
+    var availableTags = [
+      "A+",
+      "A-",
+      "B+",
+      "B-",
+	  "AB+",
+      "Scheme"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  } );
+</head>
+<body>
+	<form target=" "; method="Post">
+		<table style="border: 1px solid gray">
+			<tr >
+				<h1>PERSONAL PROFILE</h1>
+			</tr>
+			<tr >
+				<td>Name</td>
+				<td><input type="text" name="name" /></td>
+				<td> </td>
+			</tr>
+			<tr >
+				<td>Email</td>
+				<td><input type="text" name="email" /></td>
+				<td> </td>
+			</tr>
+			<tr >
+				<td>Gender</td>
+				<td><input type="radio" name="gender" value="Male" />Male<input type="radio" name="gender" value="Female" />Female</td>
+				<td> </td>
+			</tr >
+			<tr>
+				<td>Date of Birth</td>
+				<td><input type="datetime" name="date" /></td>
+				<td> </td>
+			</tr>
+			<tr>
+				<td>Blood Group</td>
+				<td><select> <option value="A+"/>A+</select></td>
+				<td> </td>
+			</tr>
+			<tr>
+				<td>Degree</td>
+				<td><input type="checked" name="degree" value="SSC" /></td>
+				<td> </td>
+			</tr>
+			<tr>
+				<td>Photo</td>
+				<td></td>
+				<td> </td>
+			</tr>
+			
+			<tr>
+				<input type="submit" name="submit" value="submit" />
+			</tr>
+		
+		</table>
+	</form>
+
+</body>
+</html>
